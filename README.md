@@ -39,3 +39,9 @@ void MainThread()
 	}
 }
 ```
+
+-----------------------------------------------------------------------------------------------------------------------------------
+The function pointer we're replacing is the "RealPresent" shown on ida not the present_begin(RealPresent function is a .data ptr). You could also hook the present_begin and achieve the same result. This is also applicable for the x64 version of obs.
+
+Note: this only works for game capture and d3d9 game
+
